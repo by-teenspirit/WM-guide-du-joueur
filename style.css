@@ -8,10 +8,80 @@
     --fond-degrade: linear-gradient(90deg, var(--primary), var(--secondary));
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+a {
+    text-decoration: none;
+}
+
 body {
     margin: 0;
     padding: 0;
+}
+
+
+/*BALISES TEXTES*/
+
+f {
+    color: #3c1700;
+    font-size: 14px;
+}
+
+l {
+    color: var(--secondary);
+    font-family: 'Times New Roman';
+    font-size: 16px;
+    letter-spacing: -1px;
+    font-style: italic;
+    text-transform: lowercase;
+    font-weight: bold;
+}
+
+o {
+    color: var(--primary);
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+r {
+    color: #0d617b;
+}
+
+t {
+    color: #b10101;
+}
+
+x {
+    color: var(--secondary);
+    font-family: 'VT323';
+    font-size: 15px !important;
+    text-transform: uppercase;
+}
+
+y {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+z {
+    color: var(--secondary);
+    font-family: 'Goldman';
+    font-size: 14px;
+}
+
+tw {
+    background: var(--primary) !important;
+    color: var(--primary) !important;
+    z-index: 998;
+    border-radius: 2px;
+}
+
+tw:hover {
+    background: none !important;
+    color: #4d4d4d !important;
+    z-index: 999;
 }
 
 .guide_container {
@@ -20,9 +90,11 @@ body {
 }
 
 .guide_container_left {
-    width: 20%;
+    width: 350px;
     height: 100vh;
     background-color: gainsboro;
+    background-image: url('fond.jpg');
+    background-size: cover;
 }
 
 
@@ -37,14 +109,129 @@ body {
 
 img.image_left {
     width: 100%;
+    margin-top: -20px;
+}
+
+.guide_container_left h1 {
+    font-family: 'Abril Fatface';
+    font-weight: normal;
+    font-size: 1.4em;
+    margin-left: 15px;
+    margin-top: -5px;
+}
+
+.guide_container_left h2 {
+    font-family: 'VT323';
+    font-weight: normal;
+    font-size: 1.2em;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+
+.guide_container>input {
+    display: none;
+}
+
+label {
+    display: block;
+    margin-left: 25px;
+    font-size: 0.77em;
+    font-family: 'Roboto';
+    line-height: 1.2em;
+}
+
+#administratif:checked~.guide_container_left .boutons .lab.admin,
+#region:checked~.guide_container_left .boutons .lab.reg,
+#fonctionnement:checked~.guide_container_left .boutons .lab.jeu,
+#contexte:checked~.guide_container_left .boutons .lab.cont,
+#objets:checked~.guide_container_left .boutons .lab.obj,
+#region2:checked~.guide_container_left .boutons .lab.reg2,
+#teamombre:checked~.guide_container_left .boutons .lab.to,
+#science:checked~.guide_container_left .boutons .lab.sci,
+#ecurie:checked~.guide_container_left .boutons .lab.ecu,
+#groupes:checked~.guide_container_left .boutons .lab.grp,
+#personnage:checked~.guide_container_left .boutons .lab.perso,
+#celebrite:checked~.guide_container_left .boutons .lab.celeb,
+#jouable:checked~.guide_container_left .boutons .lab.joua,
+#champion:checked~.guide_container_left .boutons .lab.champ,
+#elevage:checked~.guide_container_left .boutons .lab.ele,
+#systeme:checked~.guide_container_left .boutons .lab.syst,
+#points:checked~.guide_container_left .boutons .lab.pts,
+#arene:checked~.guide_container_left .boutons .lab.are,
+#experience:checked~.guide_container_left .boutons .lab.exp,
+#capture:checked~.guide_container_left .boutons .lab.capt {
+    color: var(--bold-secondary);
+    font-weight: bolder;
+    text-shadow: 1px 1px 0px white;
+}
+
+#administratif:checked~.guide_container_right .contenu.admin,
+#region:checked~.guide_container_right .contenu.reg,
+#fonctionnement:checked~.guide_container_right .contenu.jeu,
+#contexte:checked~.guide_container_right .contenu.cont,
+#objets:checked~.guide_container_right .contenu.obj,
+#region2:checked~.guide_container_right .contenu.reg2,
+#teamombre:checked~.guide_container_right .contenu.to,
+#science:checked~.guide_container_right .contenu.sci,
+#ecurie:checked~.guide_container_right .contenu.ecu,
+#groupes:checked~.guide_container_right .contenu.grp,
+#personnage:checked~.guide_container_right .contenu.perso,
+#celebrite:checked~.guide_container_right .contenu.celeb,
+#jouable:checked~.guide_container_right .contenu.joua,
+#champion:checked~.guide_container_right .contenu.champ,
+#elevage:checked~.guide_container_right .contenu.ele,
+#systeme:checked~.guide_container_right .contenu.syst,
+#points:checked~.guide_container_right .contenu.pts,
+#arene:checked~.guide_container_right .contenu.are,
+#experience:checked~.guide_container_right .contenu.exp,
+#capture:checked~.guide_container_right .contenu.capt {
+    opacity: 1;
+    visibility: visible;
+    transition: all ease 0.5s;
+}
+
+
+/* On met en place le bloc qui va contenir le contenu de chaque onglet */
+
+.right_contenu {
+    position: relative;
+}
+
+
+/* On met en place et en forme le contenu de chaque onglet */
+
+.right_contenu .contenu {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 0.5s;
+    width: 100%;
+}
+
+.home {
+    transition: .5s ease;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: #1c1c1c;
+    border: 4px solid var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1%;
+    left: 1%;
 }
 
 
 /*--------------------- RIGHT -------------------------------*/
 
 .guide_container_right {
-    width: 80%;
+    width: 100%;
 }
+
+
+/*grand titre*/
 
 .right_grand_titre {
     display: flex;
@@ -52,8 +239,72 @@ img.image_left {
     color: white;
     text-indent: 20px;
     justify-content: space-between;
+    align-items: center;
 }
 
 .right_grand_titre h1 {
-    font-family: 'Abril Fatface'
+    font-family: 'Abril Fatface';
+    font-weight: normal;
+    font-size: 1.9em;
+}
+
+.right_grand_titre img {
+    transition: .5s ease;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #1c1c1c;
+    border: 4px solid var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-right: 5%;
+}
+
+
+/*contenu*/
+
+.content {
+    padding: 0px 20px;
+    font-family: 'Roboto';
+    font-size: 0.8em;
+    overflow: auto;
+    height: 92vh;
+    background-color: aliceblue;
+}
+
+.right_contenu h1 {
+    font-family: 'Abril Fatface';
+    font-weight: normal;
+    font-size: 1.7em;
+}
+
+.right_contenu h2 {
+    font-family: 'VT323';
+    font-weight: 200;
+    font-size: 1.5em;
+    background-color: var(--secondary);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+
+/*media queries */
+
+@media (max-width: 425px) {
+    .guide_container_right .right_contenu .right_grand_titre img {
+        display: none;
+    }
+}
+
+@media (min-width: 1440px) {
+    .content {
+        width: 70%;
+        margin: 0 auto;
+    }
 }

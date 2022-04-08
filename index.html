@@ -7,30 +7,441 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guide du joueur</title>
     <link rel="stylesheet" href="style.css">
+
+
     <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto&family=VT323&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="guide_container">
+        <input checked="" name="guide_container_left" id="administratif" type="radio" />
+        <input name="guide_container_left" id="region" type="radio" />
+        <input name="guide_container_left" id="civilisation" type="radio" />
+        <input name="guide_container_left" id="fonctionnement" type="radio" />
+        <input name="guide_container_left" id="contexte" type="radio" />
+        <input name="guide_container_left" id="objets" type="radio" />
+        <input name="guide_container_left" id="region2" type="radio" />
+        <input name="guide_container_left" id="teamombre" type="radio" />
+        <input name="guide_container_left" id="science" type="radio" />
+        <input name="guide_container_left" id="ecurie" type="radio" />
+        <input name="guide_container_left" id="groupes" type="radio" />
+        <input name="guide_container_left" id="personnage" type="radio" />
+        <input name="guide_container_left" id="celebrite" type="radio" />
+        <input name="guide_container_left" id="jouable" type="radio" />
+        <input name="guide_container_left" id="champion" type="radio" />
+        <input name="guide_container_left" id="elevage" type="radio" />
+        <input name="guide_container_left" id="systeme" type="radio" />
+        <input name="guide_container_left" id="points" type="radio" />
+        <input name="guide_container_left" id="arene" type="radio" />
+        <input name="guide_container_left" id="experience" type="radio" />
+        <input name="guide_container_left" id="capture" type="radio" />
+
         <div class="guide_container_left">
             <!-- <div class="image_left"></div> -->
             <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/491.png" class="image_left" />
+            <div class="home"><a href="https://mysteryinrhode.forumactif.com/"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12.7596C5 11.4019 5 10.723 5.27446 10.1262C5.54892 9.52949 6.06437 9.08769 7.09525 8.20407L8.09525 7.34693C9.95857 5.7498 10.8902 4.95123 12 4.95123C13.1098 4.95123 14.0414 5.7498 15.9047 7.34693L16.9047 8.20407C17.9356 9.08769 18.4511 9.52949 18.7255 10.1262C19 10.723 19 11.4019 19 12.7596V17C19 18.8856 19 19.8284 18.4142 20.4142C17.8284 21 16.8856 21 15 21H9C7.11438 21 6.17157 21 5.58579 20.4142C5 19.8284 5 18.8856 5 17V12.7596Z" stroke="white"/>
+                <path d="M14.5 21V16C14.5 15.4477 14.0523 15 13.5 15H10.5C9.94772 15 9.5 15.4477 9.5 16V21" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg></a></div>
+
             <h1>La notice d'utilisation</h1>
+            <h2>La section administrative</h2>
+
+            <div class="boutons">
+                <label for="administratif" class="lab admin">01. Le règlement et disclaimer</label>
+                <label for="region" class="lab reg">02. Staff & crédits</label>
+                <label for="fonctionnement" class="lab jeu">03. TW</label>
+            </div>
+            <h2>La région de rhode</h2>
+
+            <div class="boutons">
+                <label for="contexte" class="lab cont">01. Le contexte et résumé des intrigues</label>
+                <label for="objets" class="lab obj">02. Les Objets du forum</label>
+                <label for="region2" class="lab reg2">03. La région, sa carte et son pokédex</label>
+                <label for="teamombre" class="lab to">04. La Team Ombre et les Pokémons obscurs</label>
+                <label for="science" class="lab sci">05. Les scientifiques et les fossiles</label>
+                <label for="ecurie" class="lab ecu">06. Les écuries et le Grand Prix de Rhode</label>
+            </div>
+            <h2>La civilisation de rhode</h2>
+
+            <div class="boutons">
+                <label for="groupes" class="lab grp">01. Les groupes</label>
+                <label for="personnage" class="lab perso">02. Le répertoire des personnages</label>
+                <label for="celebrite" class="lab celeb">03. Les célébrités de Rhode</label>
+                <label for="jouable" class="lab joua">04. Les personnages jouables</label>
+                <label for="champion" class="lab champ">05. Le répertoire des champions</label>
+            </div>
+            <h2>La fonctionnement du jeu</h2>
+
+            <div class="boutons">
+                <label for="elevage" class="lab ele">01. Élevage, pensions et reproductions</label>
+                <label for="systeme" class="lab syst">02. Système de combats et paliers</label>
+                <label for="points" class="lab pts">03. Battle Points, Pokédollars, Médailles</label>
+                <label for="arene" class="lab are">04. Arènes, Colosseums et missions</label>
+                <label for="experience" class="lab exp">05. Expérience et Évolution des Pokémons</label>
+                <label for="capture" class="lab capt">06. Captures et combats des Pokémons sauvages</label>
+            </div>
         </div>
         <div class="guide_container_right">
-            <div class="right_grand_titre">
-                <h1>01. Le règlement et disclaimer</h1>
-                <img src="#" />
-            </div>
-
             <div class="right_contenu">
-                <h1>01. Premier titre</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sit aliquid possimus error dolor quia maiores explicabo ab assumenda, dolorem consectetur totam quas, quam consequatur suscipit ipsam earum laborum voluptate?</p>
-                <h2>Créer son élevage</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus ipsam qui quaerat iure vero repellat ab? Iusto eaque, adipisci eum, qui distinctio tenetur cum, odio nesciunt fugit aspernatur quidem.</p>
+                <!-- section admin -->
+                <!-- Règlement -->
+                <div class="contenu admin">
+                    <div class="right_grand_titre">
+                        <h1>01. Le règlement et disclaimer</h1>
+                        <img src="https://www.pokepedia.fr/images/b/bc/Miniature_782_EB.png" />
+                    </div>
+                    <div class="content">
+                        <h1>Bienvenue sur Wild Mystery !</h1>
+                        <p>Nous vous demandons de lire le règlement avant votre inscription. Il est obligatoire pour permettre le bon fonctionnement du forum. Les règles listées ici sont non exhaustives et pourront être modifiées, supprimées ou améliorées
+                            si le besoin s’en fait sentir selon l’évolution du forum. Le règlement est le même pour tous, peu importe votre rôle ou statut sur le forum, et également si vous êtes un invité.</p>
+                        <!-- Choix de la célébrité -->
+                        <h2>choix de la célébrité</h2>
+                        <p>Votre avatar devra faire
+                            <x>200*320px ou 400*640px</x>, et représenter une personne
+                            <l>réelle et célèbre uniquement</l>, donc pas de mangas, dessins ou inconnus. On vous demande d’éviter la nudité excessive ou du contenu qui pourrait choquer ou heurter la sensibilité des membres. Nous n’acceptons pas les doublons
+                            d’avatar mis à part pour les jumeaux, pensez donc à vérifier le bottin afin de ne pas construire votre personnage autour d’une célébrité qui est déjà interprétée sur le forum. Quant à l’âge qui sépare votre personnage de son
+                            faceclaim, nous ne serons pas très regardants, tâchez tout de même de rester cohérent vis à vis des ressources dont vous disposez. Les personnages mineurs sont jouables sur le forum, à partir de
+                            <l>(dix) ans</l>. C’est en effet l’âge moyen où on reçoit son premier pokémon, il est donc plus facile de jouer un personnage à partir de cet âge. Cependant, toute relation sexuelle, amoureuse ou toxique, qu’elle soit consentie
+                            ou non entre un personnage majeur et mineur, est interdite. </p>
+                        <p>Nous serons en revanche regardant sur les origines de vos célébrités. Le
+                            <x>whitewashing</x> (désigne le fait de faire incarner par des acteurs/actrices blancs des rôles de personnages qui ne sont pas blancs, ou de blanchir la peau d’un fc racisé en graphisme), ainsi que le
+                            <x>pocfishing</x> (désigne le fait de se faire passer pour une personne racisée lorsqu’on est blanc, ou de foncer la peau d’un fc en graphisme) sont
+                            <x>interdits sur le forum</x> et nous serons intransigeants à ce sujet. Tout avatar portant ces traits devra être retiré, sous peine de suppression.</p>
+                        <p>Nous vous demandons aussi que des avatars d'une même famille (notamment parents/enfants, frère/soeur ainsi que demi-frère/soeur) aient au moins
+                            <l>une origine en commun</l>. Si vous ne savez pas quelle est l’origine de votre avatar, vous pouvez vous rendre sur
+                            <a href="https://ethnicelebs.com/">
+                                <y>Ethnicity of Celebs</y>
+                            </a>. N'hésitez pas à venir demander notre aide si vous ne trouvez pas les origines de votre célébrité. Vous pouvez également faire le choix de ne pas mentionner l’ethnie ou les origines de votre personnage.</p>
+                        <p>Nous ne nous proclamons pas experts de ce sujet et nous risquons de faire des erreurs, pour autant nous vous demandons de
+                            <l>la tolérance</l>. Ces règles pourront être modifiées, nous tâchons d’évoluer et d’inclure le plus de paramètres possibles afin de ne laisser personne de côté et d’être respectueux. Nous nous engageons à nous remettre en question
+                            lorsque cela sera nécessaire, et à faire de notre mieux pour nous informer et faire évoluer le forum. Cependant nous nous réservons le droit de <i>nous opposer à tout choix profitant d’un manque de précision dans le règlement</i>.</p>
+
+                        <!-- Avant la validation -->
+                        <h2>avant la validation</h2>
+                        <p>Le choix de votre pseudo vous est propre, cependant il devra se construire d’un prénom (ou surnom) et d’un nom de famille. Son format est à votre convenance, nous vous demanderons simplement qu’il ne
+                            <x>dépasse pas les 28 caractères</x> afin de ne pas dénaturer le codage du forum.</p>
+
+                        <p>Lorsque vous serez inscrit sur le forum, nous vous demanderons de poster votre fiche de présentation (même vide) dans les
+                            <l>(trois) jours</l>, afin que nous puissions vous souhaiter la bienvenue et réserver votre avatar. Après cas, vous aurez un délai de
+                            <l>(dix) jours</l> afin de compléter et terminer votre fiche de présentation, mais n’hésitez pas à demander des délais supplémentaires si le besoin s’en fait sentir.</p>
+
+                        <p>Il est tout à fait possible sur le forum de jouer un personnage issu des animés, des jeux vidéos ou des mangas de la saga Pokémon. Essayez cependant de rester
+                            <l>cohérent</l> vis à vis des évènements de la région de Rhode. Nous nous basons
+                            <l>(dix) ans</l> après le jeu Pokémon XD : Le Souffle des Ténèbres, de fait dix années se sont écoulées au minimum pour les autres personnages du Monde Pokémon. Rendez-vous sur
+                            <a href="https://mysteryinrhode.forumactif.com/t255-personnages-des-jeux-et-animes">
+                                <y>ce sujet</y>
+                            </a> pour en savoir plus et découvrir la liste de ceux actuellement joués.</p>
+
+                        <p>La compétition entre joueurs pour un personnage vacant créé par le forum (champion d’arènes par exemple), ou un faceclaim n’est
+                            <l>pas tolérée</l>. Le premier membre
+                            <l>inscrit et ayant posté sa fiche de présentation</l> se verra attribuer la réservation de l’avatar ou le poste vacant. Pour les pré-liens des membres et scénarios, c’est à leur bon vouloir d’accepter si une compétition est possible
+                            ou non.</p>
+
+                        <p>Après avoir posté votre fiche de présentation, vous aurez la possibilité d’aller
+                            <a href="https://mysteryinrhode.forumactif.com/t52-des-starter">
+                                <y>lancer les dés</y>
+                            </a> afin de découvrir votre Pokémon Starter. Les règles sont expliquées en détail dans le sujet, pensez à bien les lire.</p>
+
+                        <!-- Après la Validation -->
+                        <h2>après la validation</h2>
+                        <p>Maintenant que vous êtes un membre validé, Rhode s’offre à vous. <br> Vous pourrez créer autant de pré-liens et de scénarios que vous le souhaitez, sachez simplement que nous
+                            <l>ne réservons pas d’avatar</l> sur Wild Mystery. Essayez de les répartir dans les bonnes catégories, afin que nos futurs membres puissent rechercher plus aisément des liens.</p>
+
+                        <!-- Les RPs -->
+                        <h2>les rps</h2>
+                        <p>
+                            <x>Aucun minimum de réponses par mois n'est demandée.</x> Wild Mystery est un forum qui se veut tranquille, où chacun peut rp à son rythme. Cependant, nous ferons tout de même des recensements pour palier aux inactivités et aux
+                            membres fantômes. </p>
+
+                        <p>Si nous n'imposons
+                            <l>aucune limite de rp simultané</l>, du moment que vous avez le nombre d'objets ou de places nécessaires lors de la clôture, nous vous demandons de ne pas faire plus de
+                            <l>deux rp solo par mois</l>.</p>
+
+                        <p>Nous ne demandons
+                            <l>aucun minimum de ligne</l> pour les rps multijoueurs, d’évent ou pour les solos hors captures. Nous estimons que vous êtes là pour vous faire plaisir avant tout, et nous n’avons pas envie que vous vous sentiez bridés dans votre
+                            imagination. Cependant, afin d’éviter les abus, pour les rps solos
+                            <x>dans les zones sauvages</x> (donc, de captures de pokémons), nous vous demandons de respecter un minimum de
+                            <l>(cent) mots</l>. </p>
+
+                        <p>Si vous le souhaitez, il est totalement possible de jouer les dialogues ou la totalité de vos rps dans une langue étrangère, avec le consentement de votre partenaire. Lors d’un sujet commun, pensez à indiquer les traductions francophones
+                            en hide ou spoiler, pour les membres ne parlant pas cette langue.</p>
+
+                        <!-- Les Multicomptes -->
+                        <h2>les multicomptes</h2>
+                        <p> Nous acceptons avec grand plaisir les doubles-comptes. Ici, nous ne sommes pas vraiment difficiles quant aux exigences requises pour pouvoir se dédoubler. Néanmoins, comme dans tout forum nous vous demanderons de respecter certaines
+                            petites règles, et elles sont toutes détaillées dans
+                            <a href="https://mysteryinrhode.forumactif.com/t87-les-doubles-comptes">
+                                <y>le sujet adéquat</y>
+                            </a>. Vous y trouverez en même temps la liste des doubles-comptes actuels du forum, afin de pouvoir vous y retrouver plus facilement entre ces différentes têtes.</p>
+
+                        <p>Si nous n’imposons
+                            <l>pas de limite maximale</l> quand aux multicomptes sur le forum, tâchez cependant de rester cohérent avec votre irl et votre activité inrp. Il vous faudra maintenir une
+                            <l>activité équivalente avec la totalité de vos personnages</l>, puisqu’ils sont individuellement soumis à la règle des membres en dangers. En effet, le fait d’être très actif avec l’un de vos comptes n’ôte pas la possibilité
+                            à un autre d’être en danger.</p>
+
+                        <h2>le respect</h2>
+                        <p>Aucune insulte n’est tolérée sur le forum, et le respect est de mise entre joueurs, invités et membres de l’administration. La tolérance est demandée dans toutes les parties du forum, que ce soit hors rp ou inrp. Tout propos ou
+                            comportement discriminatoire sera sévèrement puni, de la suppression au bannissement et ce sans négociations possibles, tout comme le cyber-harcèlement. Si vous faites face à l’une de ces difficultés au sein du forum, n’hésitez
+                            pas à venir en parler à un membre de l’administration afin qu’il puisse vous aider.</p>
+
+                        <p>Nous avons mis en place un système de Triggers-Warnings dans le profil, afin que vous puissiez être avertis des limites du joueur que vous avez face à vous. Il vous est demandé de les respecter. Si un doute vous saisit, la communication
+                            avec votre partenaire reste essentielle afin de savoir si tel, ou tel sujet pourrait le heurter. Vous devrez impérativement signaler dans la description de votre sujet, les triggers-warnings qui peuvent heurter les lecteurs,
+                            ainsi qu’au début de chacun de vos posts. Vous trouverez plus d’informations à ce sujet
+                            <a href="https://mysteryinrhode.forumactif.com/f94-l-inclusion-et-la-sante">
+                                <y>PAR ICI</y>
+                            </a>.</p>
+
+                        <p>Nous interdisons aucun type de relations entre vos personnages, tâchez cependant de rester cohérent avec l’univers et d’utiliser les balises hide ou tw lorsque vos propos peuvent heurter la sensibilité de ceux qui pourraient vous
+                            lire. N’oublions pas que nous sommes avant tout sur un thème Pokémon, même si le contexte reste relativement sombre, et que de jeunes joueurs peuvent nous rejoindre.</p>
+
+                        <p>Nous nous excusons par avance pour ce long pavé, n’hésitez pas à le lire en plusieurs fois ou à le relire si un doute vous saisit.</p>
+                        <h1 style="text-align: center;">Bon jeu sur Wild Mystery !</h1>
+                    </div>
+                </div>
+                <div class="contenu reg">
+                    <div class="right_grand_titre">
+                        <h1>02. Le règlement et disclaimer</h1>
+                        <img src="https://www.pokepedia.fr/images/b/bc/Miniature_782_EB.png" />
+                    </div>
+                    <div class="content">
+                        <h1>02. Premier titre</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sit aliquid possimus error dolor quia maiores explicabo ab assumenda, dolorem consectetur totam quas, quam consequatur suscipit ipsam earum laborum voluptate?</p>
+                        <h2>Créer son élevage</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus ipsam qui quaerat iure vero repellat ab? Iusto eaque, adipisci eum, qui distinctio tenetur cum, odio nesciunt fugit aspernatur quidem.</p>
+                    </div>
+                </div>
+                <div class="contenu jeu">
+                    <div class="right_grand_titre">
+                        <h1>03. Les triggers-warnings (TW)</h1>
+                        <img src="https://www.pokepedia.fr/images/b/bc/Miniature_782_EB.png" />
+                    </div>
+                    <div class="content">
+                        <h1>03. Les trigger warnings</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sit aliquid possimus error dolor quia maiores explicabo ab assumenda, dolorem consectetur totam quas, quam consequatur suscipit ipsam earum laborum voluptate?</p>
+                        <h2>Créer son élevage</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus ipsam qui quaerat iure vero repellat ab? Iusto eaque, adipisci eum, qui distinctio tenetur cum, odio nesciunt fugit aspernatur quidem.</p>
+                    </div>
+                </div>
+
+
+                <!-- région de rhode -->
+                <div class="contenu cont">
+                    <div class="right_grand_titre">
+                        <h1>01. Le règlement et disclaimer</h1>
+                        <img src="https://www.pokepedia.fr/images/b/bc/Miniature_782_EB.png" />
+                    </div>
+                    <div class="content">
+                        <h1>01. Premier titre</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sit aliquid possimus error dolor quia maiores explicabo ab assumenda, dolorem consectetur totam quas, quam consequatur suscipit ipsam earum laborum voluptate?</p>
+                        <h2>Créer son élevage</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus ipsam qui quaerat iure vero repellat ab? Iusto eaque, adipisci eum, qui distinctio tenetur cum, odio nesciunt fugit aspernatur quidem.</p>
+                    </div>
+                </div>
+                <div class="contenu obj">
+                    <div class="right_grand_titre">
+                        <h1>02. Le règlement et disclaimer</h1>
+                        <img src="https://www.pokepedia.fr/images/b/bc/Miniature_782_EB.png" />
+                    </div>
+                    <div class="content">
+                        <h1>01. Premier titre</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sit aliquid possimus error dolor quia maiores explicabo ab assumenda, dolorem consectetur totam quas, quam consequatur suscipit ipsam earum laborum voluptate?</p>
+                        <h2>Créer son élevage</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus ipsam qui quaerat iure vero repellat ab? Iusto eaque, adipisci eum, qui distinctio tenetur cum, odio nesciunt fugit aspernatur quidem.</p>
+                    </div>
+                </div>
+                <div class="contenu reg2">
+                    <div class="right_grand_titre">
+                        <h1>03. Le règlement et disclaimer</h1>
+                        <img src="https://www.pokepedia.fr/images/b/bc/Miniature_782_EB.png" />
+                    </div>
+                    <div class="content">
+                        <h1>01. Premier titre</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sit aliquid possimus error dolor quia maiores explicabo ab assumenda, dolorem consectetur totam quas, quam consequatur suscipit ipsam earum laborum voluptate?</p>
+                        <h2>Créer son élevage</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus ipsam qui quaerat iure vero repellat ab? Iusto eaque, adipisci eum, qui distinctio tenetur cum, odio nesciunt fugit aspernatur quidem.</p>
+                    </div>
+                </div>
+                <div class="contenu to">
+                    <div class="right_grand_titre">
+                        <h1>04. Le règlement et disclaimer</h1>
+                        <img src="https://www.pokepedia.fr/images/b/bc/Miniature_782_EB.png" />
+                    </div>
+                    <div class="content">
+                        <h1>01. Premier titre</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sit aliquid possimus error dolor quia maiores explicabo ab assumenda, dolorem consectetur totam quas, quam consequatur suscipit ipsam earum laborum voluptate?</p>
+                        <h2>Créer son élevage</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus ipsam qui quaerat iure vero repellat ab? Iusto eaque, adipisci eum, qui distinctio tenetur cum, odio nesciunt fugit aspernatur quidem.</p>
+                    </div>
+                </div>
+                <div class="contenu sci">
+                    <div class="right_grand_titre">
+                        <h1>05. Le règlement et disclaimer</h1>
+                        <img src="https://www.pokepedia.fr/images/b/bc/Miniature_782_EB.png" />
+                    </div>
+                    <div class="content">
+                        <h1>01. Premier titre</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sit aliquid possimus error dolor quia maiores explicabo ab assumenda, dolorem consectetur totam quas, quam consequatur suscipit ipsam earum laborum voluptate?</p>
+                        <h2>Créer son élevage</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus ipsam qui quaerat iure vero repellat ab? Iusto eaque, adipisci eum, qui distinctio tenetur cum, odio nesciunt fugit aspernatur quidem.</p>
+                    </div>
+                </div>
+                <div class="contenu ecu">
+                    <div class="right_grand_titre">
+                        <h1>06. Le règlement et disclaimer</h1>
+                        <img src="https://www.pokepedia.fr/images/b/bc/Miniature_782_EB.png" />
+                    </div>
+                    <div class="content">
+                        <h1>01. Premier titre</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sit aliquid possimus error dolor quia maiores explicabo ab assumenda, dolorem consectetur totam quas, quam consequatur suscipit ipsam earum laborum voluptate?</p>
+                        <h2>Créer son élevage</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus ipsam qui quaerat iure vero repellat ab? Iusto eaque, adipisci eum, qui distinctio tenetur cum, odio nesciunt fugit aspernatur quidem.</p>
+                    </div>
+                </div>
+                <!-- la civilisation de rhode -->
+                <div class="contenu grp">
+                    <div class="right_grand_titre">
+                        <h1>01. Le règlement et disclaimer</h1>
+                        <img src="https://www.pokepedia.fr/images/b/bc/Miniature_782_EB.png" />
+                    </div>
+                    <div class="content">
+                        <h1>01. Premier titre</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sit aliquid possimus error dolor quia maiores explicabo ab assumenda, dolorem consectetur totam quas, quam consequatur suscipit ipsam earum laborum voluptate?</p>
+                        <h2>Créer son élevage</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus ipsam qui quaerat iure vero repellat ab? Iusto eaque, adipisci eum, qui distinctio tenetur cum, odio nesciunt fugit aspernatur quidem.</p>
+                    </div>
+                </div>
+                <div class="contenu perso">
+                    <div class="right_grand_titre">
+                        <h1>02. Le règlement et disclaimer</h1>
+                        <img src="https://www.pokepedia.fr/images/b/bc/Miniature_782_EB.png" />
+                    </div>
+                    <div class="content">
+                        <h1>01. Premier titre</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sit aliquid possimus error dolor quia maiores explicabo ab assumenda, dolorem consectetur totam quas, quam consequatur suscipit ipsam earum laborum voluptate?</p>
+                        <h2>Créer son élevage</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus ipsam qui quaerat iure vero repellat ab? Iusto eaque, adipisci eum, qui distinctio tenetur cum, odio nesciunt fugit aspernatur quidem.</p>
+                    </div>
+                </div>
+                <div class="contenu celeb">
+                    <div class="right_grand_titre">
+                        <h1>03. Le règlement et disclaimer</h1>
+                        <img src="https://www.pokepedia.fr/images/b/bc/Miniature_782_EB.png" />
+                    </div>
+                    <div class="content">
+                        <h1>01. Premier titre</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sit aliquid possimus error dolor quia maiores explicabo ab assumenda, dolorem consectetur totam quas, quam consequatur suscipit ipsam earum laborum voluptate?</p>
+                        <h2>Créer son élevage</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus ipsam qui quaerat iure vero repellat ab? Iusto eaque, adipisci eum, qui distinctio tenetur cum, odio nesciunt fugit aspernatur quidem.</p>
+                    </div>
+                </div>
+                <div class="contenu joua">
+                    <div class="right_grand_titre">
+                        <h1>04. Le règlement et disclaimer</h1>
+                        <img src="https://www.pokepedia.fr/images/b/bc/Miniature_782_EB.png" />
+                    </div>
+                    <div class="content">
+                        <h1>01. Premier titre</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sit aliquid possimus error dolor quia maiores explicabo ab assumenda, dolorem consectetur totam quas, quam consequatur suscipit ipsam earum laborum voluptate?</p>
+                        <h2>Créer son élevage</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus ipsam qui quaerat iure vero repellat ab? Iusto eaque, adipisci eum, qui distinctio tenetur cum, odio nesciunt fugit aspernatur quidem.</p>
+                    </div>
+                </div>
+                <div class="contenu champ">
+                    <div class="right_grand_titre">
+                        <h1>05. Le règlement et disclaimer</h1>
+                        <img src="https://www.pokepedia.fr/images/b/bc/Miniature_782_EB.png" />
+                    </div>
+                    <div class="content">
+                        <h1>01. Premier titre</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sit aliquid possimus error dolor quia maiores explicabo ab assumenda, dolorem consectetur totam quas, quam consequatur suscipit ipsam earum laborum voluptate?</p>
+                        <h2>Créer son élevage</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus ipsam qui quaerat iure vero repellat ab? Iusto eaque, adipisci eum, qui distinctio tenetur cum, odio nesciunt fugit aspernatur quidem.</p>
+                    </div>
+                </div>
+
+                <!-- le fonctionnement du jeu -->
+                <div class="contenu ele">
+                    <div class="right_grand_titre">
+                        <h1>01. Le règlement et disclaimer</h1>
+                        <img src="https://www.pokepedia.fr/images/b/bc/Miniature_782_EB.png" />
+                    </div>
+                    <div class="content">
+                        <h1>01. Premier titre</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sit aliquid possimus error dolor quia maiores explicabo ab assumenda, dolorem consectetur totam quas, quam consequatur suscipit ipsam earum laborum voluptate?</p>
+                        <h2>Créer son élevage</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus ipsam qui quaerat iure vero repellat ab? Iusto eaque, adipisci eum, qui distinctio tenetur cum, odio nesciunt fugit aspernatur quidem.</p>
+                    </div>
+                </div>
+                <div class="contenu syst">
+                    <div class="right_grand_titre">
+                        <h1>02. Le règlement et disclaimer</h1>
+                        <img src="https://www.pokepedia.fr/images/b/bc/Miniature_782_EB.png" />
+                    </div>
+                    <div class="content">
+                        <h1>01. Premier titre</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sit aliquid possimus error dolor quia maiores explicabo ab assumenda, dolorem consectetur totam quas, quam consequatur suscipit ipsam earum laborum voluptate?</p>
+                        <h2>Créer son élevage</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus ipsam qui quaerat iure vero repellat ab? Iusto eaque, adipisci eum, qui distinctio tenetur cum, odio nesciunt fugit aspernatur quidem.</p>
+                    </div>
+                </div>
+                <div class="contenu pts">
+                    <div class="right_grand_titre">
+                        <h1>03. Le règlement et disclaimer</h1>
+                        <img src="https://www.pokepedia.fr/images/b/bc/Miniature_782_EB.png" />
+                    </div>
+                    <div class="content">
+                        <h1>01. Premier titre</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sit aliquid possimus error dolor quia maiores explicabo ab assumenda, dolorem consectetur totam quas, quam consequatur suscipit ipsam earum laborum voluptate?</p>
+                        <h2>Créer son élevage</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus ipsam qui quaerat iure vero repellat ab? Iusto eaque, adipisci eum, qui distinctio tenetur cum, odio nesciunt fugit aspernatur quidem.</p>
+                    </div>
+                </div>
+                <div class="contenu are">
+                    <div class="right_grand_titre">
+                        <h1>04. Le règlement et disclaimer</h1>
+                        <img src="https://www.pokepedia.fr/images/b/bc/Miniature_782_EB.png" />
+                    </div>
+                    <div class="content">
+                        <h1>01. Premier titre</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sit aliquid possimus error dolor quia maiores explicabo ab assumenda, dolorem consectetur totam quas, quam consequatur suscipit ipsam earum laborum voluptate?</p>
+                        <h2>Créer son élevage</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus ipsam qui quaerat iure vero repellat ab? Iusto eaque, adipisci eum, qui distinctio tenetur cum, odio nesciunt fugit aspernatur quidem.</p>
+                    </div>
+                </div>
+                <div class="contenu exp">
+                    <div class="right_grand_titre">
+                        <h1>05. Le règlement et disclaimer</h1>
+                        <img src="https://www.pokepedia.fr/images/b/bc/Miniature_782_EB.png" />
+                    </div>
+                    <div class="content">
+                        <h1>01. Premier titre</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sit aliquid possimus error dolor quia maiores explicabo ab assumenda, dolorem consectetur totam quas, quam consequatur suscipit ipsam earum laborum voluptate?</p>
+                        <h2>Créer son élevage</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus ipsam qui quaerat iure vero repellat ab? Iusto eaque, adipisci eum, qui distinctio tenetur cum, odio nesciunt fugit aspernatur quidem.</p>
+                    </div>
+                </div>
+                <div class="contenu capt">
+                    <div class="right_grand_titre">
+                        <h1>06. Le règlement et disclaimer</h1>
+                        <img src="https://www.pokepedia.fr/images/b/bc/Miniature_782_EB.png" />
+                    </div>
+                    <div class="content">
+                        <h1>01. Premier titre</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sit aliquid possimus error dolor quia maiores explicabo ab assumenda, dolorem consectetur totam quas, quam consequatur suscipit ipsam earum laborum voluptate?</p>
+                        <h2>Créer son élevage</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus ipsam qui quaerat iure vero repellat ab? Iusto eaque, adipisci eum, qui distinctio tenetur cum, odio nesciunt fugit aspernatur quidem.</p>
+                    </div>
+                </div>
+                <!-- fin des sections -->
+
             </div>
         </div>
     </div>
