@@ -18,6 +18,32 @@ body {
 }
 
 
+/*SCROLLBAR*/
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #f3f4f7;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    background-color: #74496b;
+    height: 30px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: #74496b;
+    height: 30px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+
 /*BALISES TEXTES*/
 
 f {
@@ -95,6 +121,7 @@ tw:hover {
     background-color: gainsboro;
     background-image: url('fond.jpg');
     background-size: cover;
+    overflow: auto;
 }
 
 
@@ -110,6 +137,7 @@ tw:hover {
 img.image_left {
     width: 100%;
     margin-top: -20px;
+    opacity: 0.7;
 }
 
 .guide_container_left h1 {
@@ -228,6 +256,8 @@ label {
 
 .guide_container_right {
     width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
 
@@ -270,8 +300,12 @@ label {
     font-family: 'Roboto';
     font-size: 0.8em;
     overflow: auto;
-    height: 92vh;
+    height: 90vh;
     background-color: aliceblue;
+}
+
+.content p:last-child {
+    margin-bottom: 50px;
 }
 
 .right_contenu h1 {
@@ -310,7 +344,8 @@ label {
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    column-gap: 20px;
+    row-gap: 10px;
 }
 
 .blocstaff_left img {
@@ -361,6 +396,8 @@ label {
 
 .blocstaff_right p {
     font-size: 12px;
+    height: 70px;
+    overflow: auto;
 }
 
 .blocstaff_btm {
