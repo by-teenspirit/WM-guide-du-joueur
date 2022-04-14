@@ -140,6 +140,10 @@ img.image_left {
     opacity: 0.7;
 }
 
+.guide_container_right .right_contenu .right_grand_titre svg {
+    padding-right: 20px;
+}
+
 .guide_container_left h1 {
     font-family: 'Abril Fatface';
     font-weight: normal;
@@ -300,7 +304,7 @@ label {
     font-family: 'Roboto';
     font-size: 0.8em;
     overflow: auto;
-    height: 90vh;
+    height: 100vh;
     background-color: aliceblue;
 }
 
@@ -378,6 +382,11 @@ label {
     flex-wrap: wrap;
 }
 
+.blocstaffleft_lien {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
 .blocstaff_right {
     width: 65%;
 }
@@ -398,6 +407,7 @@ label {
     font-size: 12px;
     height: 70px;
     overflow: auto;
+    margin-bottom: 10px !important;
 }
 
 .blocstaff_btm {
@@ -415,9 +425,35 @@ label {
     .guide_container_right .right_contenu .right_grand_titre img {
         display: none;
     }
+    .guide_container_left {
+        display: none;
+    }
+    .right_contenu .right_grand_titre h1:first-of-type {
+        font-size: 1.2em;
+    }
+    .right_contenu h1 {
+        font-size: 1.4em;
+    }
+    .blocstaff_left,
+    .blocstaff_right {
+        width: 100%;
+        padding: 10px;
+    }
+    .blocstaff_btm {
+        text-indent: 5px;
+    }
+    .content {
+        height: 95vh;
+    }
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 426px) {
+    .guide_container_right .right_contenu .right_grand_titre svg {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
     .blocstaff {
         width: 100%;
     }
@@ -426,7 +462,7 @@ label {
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
     .content {
         width: 70%;
         margin: 0 auto;
