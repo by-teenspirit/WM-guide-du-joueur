@@ -35,10 +35,10 @@
             position: fixed;
             z-index: 1;
             top: 0;
-            left: -250px;
+            right: -250px;
             background-color: #e8e8e8;
             padding-top: 60px;
-            transition: left 0.5s ease;
+            transition: right 0.5s ease;
         }
         /* Sidenav menu links */
         
@@ -63,7 +63,7 @@
         /* Active class */
         
         .sidenav.active {
-            left: 0;
+            right: 0;
         }
         /* Close btn */
         
@@ -81,6 +81,11 @@
             height: 5px;
             background-color: black;
             margin: 6px 0;
+        }
+        
+        span.burger-icon {
+            position: absolute;
+            right: 1%;
         }
     </style>
     <script>

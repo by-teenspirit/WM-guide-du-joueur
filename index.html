@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 
 
-    <script src="script.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,6 +20,23 @@
 </head>
 
 <body>
+    <div id="mySidenav" class="sidenav">
+        <a id="closeBtn" href="#" class="close">×</a>
+        <ul>
+            <li><a href="#">A propos</a></li>
+            <li><a href="#">Nos services</a></li>
+            <li><a href="#">Témoignages</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <a href="#" id="openBtn">
+        <span class="burger-icon">
+          <span></span>
+        <span></span>
+        <span></span>
+        </span>
+    </a>
     <div class="guide_container">
         <input checked="" name="guide_container_left" id="administratif" type="radio" />
         <input name="guide_container_left" id="region" type="radio" />
@@ -54,9 +71,9 @@
             <h2>La section administrative</h2>
 
             <div class="boutons">
-                <label for="administratif" class="lab admin">01. Le règlement et disclaimer</label>
-                <label for="region" class="lab reg">02. Staff & crédits</label>
-                <label for="fonctionnement" class="lab jeu">03. TW</label>
+                <a href="#reglement"><label for="administratif" class="lab admin">01. Le règlement et disclaimer</label></a>
+                <a href="region"><label for="region" class="lab reg">02. Staff & crédits</label></a>
+                <a href="#tw"><label for="fonctionnement" class="lab jeu">03. TW</label></a>
             </div>
             <h2>La région de rhode</h2>
 
@@ -77,7 +94,7 @@
                 <label for="jouable" class="lab joua">04. Les personnages jouables</label>
                 <label for="champion" class="lab champ">05. Le répertoire des champions</label>
             </div>
-            <h2>La fonctionnement du jeu</h2>
+            <h2>Le fonctionnement du jeu</h2>
 
             <div class="boutons">
                 <label for="elevage" class="lab ele">01. Élevage, pensions et reproductions</label>
@@ -89,6 +106,7 @@
             </div>
         </div>
         <div class="guide_container_right">
+
             <div class="right_contenu">
                 <!-- section admin -->
                 <!-- Règlement -->
@@ -96,9 +114,7 @@
                     <div class="right_grand_titre">
                         <h1>01. Le règlement et disclaimer</h1>
                         <img src="https://www.pokepedia.fr/images/b/bc/Miniature_782_EB.png" />
-                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.21558 6.71559C3.21558 5.88716 3.88715 5.21559 4.71558 5.21559H20.7156C21.544 5.21559 22.2156 5.88716 22.2156 6.71559C22.2156 7.54402 21.544 8.21559 20.7156 8.21559H4.71558C3.88715 8.21559 3.21558 7.54402 3.21558 6.71559ZM3.21558 12.7156C3.21558 11.8872 3.88715 11.2156 4.71558 11.2156H20.7156C21.544 11.2156 22.2156 11.8872 22.2156 12.7156C22.2156 13.544 21.544 14.2156 20.7156 14.2156H4.71558C3.88715 14.2156 3.21558 13.544 3.21558 12.7156ZM3.21558 18.7156C3.21558 17.8872 3.88715 17.2156 4.71558 17.2156H20.7156C21.544 17.2156 22.2156 17.8872 22.2156 18.7156C22.2156 19.544 21.544 20.2156 20.7156 20.2156H4.71558C3.88715 20.2156 3.21558 19.544 3.21558 18.7156Z" fill="white"/>
-                            </svg>
+
 
 
                     </div>
@@ -304,11 +320,11 @@
                 <!-- région de rhode -->
                 <div class="contenu cont">
                     <div class="right_grand_titre">
-                        <h1>01. Le règlement et disclaimer</h1>
+                        <h1>01. Le contexte et le résumé des intrigues</h1>
                         <img src="https://www.pokepedia.fr/images/b/bc/Miniature_782_EB.png" />
                     </div>
                     <div class="content">
-                        <h1>01. Premier titre</h1>
+                        <h1>01. L'histoire de Rhode</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sit aliquid possimus error dolor quia maiores explicabo ab assumenda, dolorem consectetur totam quas, quam consequatur suscipit ipsam earum laborum voluptate?</p>
                         <h2>Créer son élevage</h2>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus ipsam qui quaerat iure vero repellat ab? Iusto eaque, adipisci eum, qui distinctio tenetur cum, odio nesciunt fugit aspernatur quidem.</p>
@@ -515,5 +531,6 @@
         </div>
     </div>
 </body>
+<script src="script.js"></script>
 
 </html>

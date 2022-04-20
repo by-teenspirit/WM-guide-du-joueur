@@ -10,6 +10,7 @@
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 body {
@@ -262,6 +263,7 @@ label {
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    background-color: #F1F1F1;
 }
 
 
@@ -304,8 +306,9 @@ label {
     font-family: 'Roboto';
     font-size: 0.8em;
     overflow: auto;
-    height: 100vh;
-    background-color: aliceblue;
+    border: 1px solid gainsboro;
+    height: 95vh;
+    background-color: white;
 }
 
 .content p:last-child {
@@ -421,7 +424,7 @@ label {
 
 /*media queries */
 
-@media (max-width: 425px) {
+@media (max-width: 767px) {
     .guide_container_right .right_contenu .right_grand_titre img {
         display: none;
     }
@@ -433,11 +436,18 @@ label {
     }
     .right_contenu h1 {
         font-size: 1.4em;
+        text-align: center;
+        margin-top: 5px;
     }
-    .blocstaff_left,
+    .right_contenu h3 {
+        text-align: center;
+    }
     .blocstaff_right {
         width: 100%;
         padding: 10px;
+    }
+    .blocstaff_left {
+        display: none;
     }
     .blocstaff_btm {
         text-indent: 5px;
@@ -445,10 +455,73 @@ label {
     .content {
         height: 95vh;
     }
+    .guide_container_right svg {
+        position: absolute;
+        top: 1%;
+        right: 3%;
+        z-index: 1;
+    }
+    /* Sidenav menu */
+    .sidenav {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        right: -100%;
+        background-color: #e8e8e8;
+        padding-top: 60px;
+        transition: right 0.5s ease;
+    }
+    /* Sidenav menu links */
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    .sidenav a:hover {
+        color: #111;
+    }
+    .sidenav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    /* Active class */
+    .sidenav.active {
+        right: 0;
+    }
+    /* Close btn */
+    .sidenav .close {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+    }
+    /* Icône burger */
+    .burger-icon span {
+        display: block;
+        width: 35px;
+        height: 4px;
+        background-color: white;
+        margin: 5px 0;
+        border-radius: 5px;
+    }
+    span.burger-icon {
+        position: absolute;
+        right: 1%;
+        z-index: 100;
+    }
 }
 
-@media (min-width: 426px) {
+@media (min-width: 768px) {
     .guide_container_right .right_contenu .right_grand_titre svg {
+        display: none;
+    }
+    .sidenav {
         display: none;
     }
 }
@@ -466,5 +539,8 @@ label {
     .content {
         width: 70%;
         margin: 0 auto;
+        margin-top: 20px;
+        height: 90vh;
+        outline: solid 5px rgba(255, 255, 255, 0.5);
     }
 }
