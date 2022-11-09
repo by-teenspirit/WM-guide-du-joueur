@@ -6,6 +6,9 @@
     --bold-primary: #71bdba;
     --bold-secondary: #ab4ca9;
     --fond-degrade: linear-gradient(90deg, var(--primary), var(--secondary));
+    --family1: 'Abril Fatface';
+    --family2: 'VT323';
+    --family3: 'Roboto';
 }
 
 a {
@@ -64,7 +67,7 @@ l {
 
 o {
     color: var(--primary);
-    font-family: 'Roboto';
+    font-family: var(--family3);
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 600;
@@ -80,7 +83,7 @@ t {
 
 x {
     color: var(--secondary);
-    font-family: 'VT323';
+    font-family: var(--family2);
     font-size: 15px !important;
     text-transform: uppercase;
 }
@@ -110,6 +113,9 @@ tw:hover {
     color: #4d4d4d !important;
     z-index: 999;
 }
+
+
+/*CONTENU GUIDE*/
 
 .guide_container {
     display: flex;
@@ -146,7 +152,7 @@ img.image_left {
 }
 
 .guide_container_left h1 {
-    font-family: 'Abril Fatface';
+    font-family: var(--family1);
     font-weight: normal;
     font-size: 1.4em;
     margin-left: 15px;
@@ -154,7 +160,7 @@ img.image_left {
 }
 
 .guide_container_left h2 {
-    font-family: 'VT323';
+    font-family: var(--family2);
     font-weight: normal;
     font-size: 1.2em;
     margin-left: 20px;
@@ -162,46 +168,7 @@ img.image_left {
 }
 
 
-/* .guide_container>input {
-    display: none;
-}
-
-.guide_container ul li {
-    position: relative;
-}
-
-.guide_container li ul {
-    display: none;
-}
-
-.guide_container li:hover>ul {
-    display: block;
-    position: absolute;
-}
-
-.guide_container ul ul ul {
-    left: 100%;
-    top: 0;
-}
-
-.guide_container li {
-    list-style: none;
-}
-
-.guide_container .boutons a {
-    display: block;
-    font-size: 0.77em;
-    font-family: 'Roboto';
-    line-height: 1.2em;
-    transform: scaleY(1);
-    transform-origin: top;
-}
-
-.guide_container a.actif {
-    color: var(--bold-secondary);
-    font-weight: bolder;
-    text-shadow: 1px 1px 0px white;
-} */
+/*NAVIGATION*/
 
 nav {
     position: relative;
@@ -213,13 +180,9 @@ nav ul {
     padding: 0;
 }
 
-nav ul li {
-    /* Sub Menu */
-}
-
 nav ul li a {
     display: block;
-    background: #ebebeb;
+    background: #e0e0e094;
     padding: 10px 15px;
     color: #333;
     text-decoration: none;
@@ -228,11 +191,13 @@ nav ul li a {
     -ms-transition: 0.2s linear;
     -o-transition: 0.2s linear;
     transition: 0.2s linear;
+    font-family: var(--family2);
+    text-transform: uppercase;
 }
 
 nav ul li a:hover {
-    background: #f8f8f8;
-    color: #515151;
+    background: #e7e7e7b9;
+    color: var(--bold-secondary);
 }
 
 nav ul li a .fa {
@@ -250,87 +215,27 @@ nav ul li ul li a {
     background: #f8f8f8;
     border-left: 4px solid transparent;
     padding: 10px 20px;
+    font-family: var(--family3);
+    text-transform: initial;
+    font-size: 0.8rem;
 }
 
 nav ul li ul li a:hover {
     background: #ebebeb;
-    border-left: 4px solid #3498db;
+    border-left: 4px solid var(--bold-secondary);
+    text-shadow: 0px 1px 0px rgb(255, 255, 255);
 }
 
-#administratif:checked~.guide_container_left .boutons .lab.admin,
-#region:checked~.guide_container_left .boutons .lab.reg,
-#fonctionnement:checked~.guide_container_left .boutons .lab.jeu,
-#contexte:checked~.guide_container_left .boutons .lab.cont,
-#objets:checked~.guide_container_left .boutons .lab.obj,
-#region2:checked~.guide_container_left .boutons .lab.reg2,
-#teamombre:checked~.guide_container_left .boutons .lab.to,
-#science:checked~.guide_container_left .boutons .lab.sci,
-#ecurie:checked~.guide_container_left .boutons .lab.ecu,
-#groupes:checked~.guide_container_left .boutons .lab.grp,
-#personnage:checked~.guide_container_left .boutons .lab.perso,
-#celebrite:checked~.guide_container_left .boutons .lab.celeb,
-#jouable:checked~.guide_container_left .boutons .lab.joua,
-#champion:checked~.guide_container_left .boutons .lab.champ,
-#elevage:checked~.guide_container_left .boutons .lab.ele,
-#systeme:checked~.guide_container_left .boutons .lab.syst,
-#points:checked~.guide_container_left .boutons .lab.pts,
-#arene:checked~.guide_container_left .boutons .lab.are,
-#experience:checked~.guide_container_left .boutons .lab.exp,
-#capture:checked~.guide_container_left .boutons .lab.capt {
-    color: var(--bold-secondary);
-    font-weight: bolder;
-    text-shadow: 1px 1px 0px white;
+nav .actif {
+    background: #ebebeb;
+    border-left: 4px solid var(--bold-secondary);
+    text-shadow: 0px 1px 0px rgb(255, 255, 255);
 }
-
-#administratif:checked~.guide_container_right .contenu.admin,
-#region:checked~.guide_container_right .contenu.reg,
-#fonctionnement:checked~.guide_container_right .contenu.jeu,
-#contexte:checked~.guide_container_right .contenu.cont,
-#objets:checked~.guide_container_right .contenu.obj,
-#region2:checked~.guide_container_right .contenu.reg2,
-#teamombre:checked~.guide_container_right .contenu.to,
-#science:checked~.guide_container_right .contenu.sci,
-#ecurie:checked~.guide_container_right .contenu.ecu,
-#groupes:checked~.guide_container_right .contenu.grp,
-#personnage:checked~.guide_container_right .contenu.perso,
-#celebrite:checked~.guide_container_right .contenu.celeb,
-#jouable:checked~.guide_container_right .contenu.joua,
-#champion:checked~.guide_container_right .contenu.champ,
-#elevage:checked~.guide_container_right .contenu.ele,
-#systeme:checked~.guide_container_right .contenu.syst,
-#points:checked~.guide_container_right .contenu.pts,
-#arene:checked~.guide_container_right .contenu.are,
-#experience:checked~.guide_container_right .contenu.exp,
-#capture:checked~.guide_container_right .contenu.capt {
-    opacity: 1;
-    visibility: visible;
-    transition: all ease 0.5s;
-}
-
-
-/* On met en place le bloc qui va contenir le contenu de chaque onglet */
-
-
-/* .right_contenu {
-    position: relative;
-} */
-
-
-/* On met en place et en forme le contenu de chaque onglet */
-
-
-/* .right_contenu .contenu {
-    position: absolute;
-    opacity: 0;
-    visibility: hidden;
-    transition: all ease 0.5s;
-    width: 100%;
-} */
 
 .home {
     transition: .5s ease;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border-radius: 100px;
     background-color: #1c1c1c;
     border: 4px solid var(--primary);
@@ -340,6 +245,10 @@ nav ul li ul li a:hover {
     position: absolute;
     top: 1%;
     left: 1%;
+}
+
+.home .fa-solid {
+    color: rgb(233, 233, 233);
 }
 
 
@@ -572,6 +481,12 @@ nav ul li ul li a:hover {
 /*media queries */
 
 @media (max-width: 767px) {
+    .home {
+        right: 4%;
+        bottom: 1%;
+        top: initial;
+        left: initial;
+    }
     .guide_container_right .right_contenu .right_grand_titre img {
         display: none;
     }
@@ -581,10 +496,17 @@ nav ul li ul li a:hover {
     .right_contenu .right_grand_titre h1:first-of-type {
         font-size: 1.2em;
     }
+    .right_contenu .right_grand_titre {
+        justify-content: flex-end;
+        padding-right: 15px;
+        align-items: center;
+        align-content: center;
+        text-indent: initial;
+    }
     .right_contenu h1 {
         font-size: 1.4em;
         text-align: center;
-        margin-top: 5px;
+        margin-top: 8px;
     }
     .right_contenu h3 {
         text-align: center;
@@ -641,26 +563,114 @@ nav ul li ul li a:hover {
     .sidenav.active {
         right: 0;
     }
-    /* Close btn */
-    .sidenav .close {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
+    /*
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * MIT License
+ *
+ *
+ * If you are thinking of using this in
+ * production code, beware of the browser
+ * prefixes.
+ */
+    nav.animated.bounceInDown {
+        margin-top: -24px;
     }
-    /* Icône burger */
-    .burger-icon span {
+    #menuToggle {
         display: block;
-        width: 35px;
-        height: 4px;
-        background-color: white;
-        margin: 5px 0;
-        border-radius: 5px;
+        position: relative;
+        top: 35px;
+        left: 20px;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+        width: 93%;
     }
-    span.burger-icon {
+    #menuToggle a {
+        text-decoration: none;
+        color: #232323;
+        transition: color 0.3s ease;
+    }
+    #menuToggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
         position: absolute;
-        right: 1%;
-        z-index: 100;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;
+        opacity: 0;
+        /* hide this */
+        z-index: 2;
+        /* and place it over the hamburger */
+        -webkit-touch-callout: none;
+    }
+    /*
+ * Just a quick hamburger
+ */
+    #menuToggle span {
+        display: block;
+        width: 28px;
+        height: 3px;
+        margin-bottom: 5px;
+        position: relative;
+        background: rgb(240, 240, 240);
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+    }
+    #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+    }
+    #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+    /* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+    #menuToggle input:checked~span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #232323;
+    }
+    /*
+ * But let's hide the middle one.
+ */
+    #menuToggle input:checked~span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    /*
+ * Ohyeah and the last one should go the other direction
+ */
+    #menuToggle input:checked~span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+    /*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+    #menu {
+        position: absolute;
+        height: 58pc;
+        width: 100%;
+        margin: -100px 0 0 -20px;
+        padding-top: 107px;
+        background: #ededed;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        /* to stop flickering of text in safari */
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+    /*
+ * And let's slide it in from the left
+ */
+    #menuToggle input:checked~ul {
+        transform: none;
     }
 }
 
@@ -670,6 +680,10 @@ nav ul li ul li a:hover {
     }
     .sidenav {
         display: none;
+    }
+    #menuToggle {
+        display: none;
+        ;
     }
 }
 
