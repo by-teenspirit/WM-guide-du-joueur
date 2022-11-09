@@ -161,16 +161,100 @@ img.image_left {
     text-transform: uppercase;
 }
 
-.guide_container>input {
+
+/* .guide_container>input {
     display: none;
 }
 
-label {
+.guide_container ul li {
+    position: relative;
+}
+
+.guide_container li ul {
+    display: none;
+}
+
+.guide_container li:hover>ul {
     display: block;
-    margin-left: 25px;
+    position: absolute;
+}
+
+.guide_container ul ul ul {
+    left: 100%;
+    top: 0;
+}
+
+.guide_container li {
+    list-style: none;
+}
+
+.guide_container .boutons a {
+    display: block;
     font-size: 0.77em;
     font-family: 'Roboto';
     line-height: 1.2em;
+    transform: scaleY(1);
+    transform-origin: top;
+}
+
+.guide_container a.actif {
+    color: var(--bold-secondary);
+    font-weight: bolder;
+    text-shadow: 1px 1px 0px white;
+} */
+
+nav {
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    /* Sub Menu */
+}
+
+nav ul li a {
+    display: block;
+    background: #ebebeb;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -ms-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
+}
+
+nav ul li a:hover {
+    background: #f8f8f8;
+    color: #515151;
+}
+
+nav ul li a .fa {
+    width: 16px;
+    text-align: center;
+    margin-right: 5px;
+    float: right;
+}
+
+nav ul ul {
+    background-color: #ebebeb;
+}
+
+nav ul li ul li a {
+    background: #f8f8f8;
+    border-left: 4px solid transparent;
+    padding: 10px 20px;
+}
+
+nav ul li ul li a:hover {
+    background: #ebebeb;
+    border-left: 4px solid #3498db;
 }
 
 #administratif:checked~.guide_container_left .boutons .lab.admin,
@@ -226,20 +310,22 @@ label {
 
 /* On met en place le bloc qui va contenir le contenu de chaque onglet */
 
-.right_contenu {
+
+/* .right_contenu {
     position: relative;
-}
+} */
 
 
 /* On met en place et en forme le contenu de chaque onglet */
 
-.right_contenu .contenu {
+
+/* .right_contenu .contenu {
     position: absolute;
     opacity: 0;
     visibility: hidden;
     transition: all ease 0.5s;
     width: 100%;
-}
+} */
 
 .home {
     transition: .5s ease;
