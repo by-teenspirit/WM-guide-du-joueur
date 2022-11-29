@@ -13,7 +13,9 @@
 
 a {
     text-decoration: none;
-    color: black;
+    color: var(--primary);
+    text-shadow: 1px 1px 0px white;
+    border-bottom: 1px solid var(--primary);
 }
 
 body {
@@ -251,6 +253,11 @@ nav .actif {
     color: rgb(233, 233, 233);
 }
 
+.home a {
+    border-bottom: 0px;
+    text-shadow: 0px 0px 0px;
+}
+
 
 /*--------------------- RIGHT -------------------------------*/
 
@@ -423,6 +430,9 @@ nav .actif {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .fpv_box {
@@ -459,16 +469,15 @@ nav .actif {
     border-radius: 100px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     font-family: 'VT323';
-    font-size: 25px;
+    font-size: 1.1rem;
     text-transform: uppercase;
     margin-left: -30px;
+    text-indent: 33px;
 }
 
 .fpv_bloc3 {
-    background: var(--fiche-fondlight);
-    border: 1px solid var(--border);
     margin-top: 3px;
     float: left;
     width: 100%;
@@ -477,8 +486,93 @@ nav .actif {
     line-height: 15px;
 }
 
+.fpv_bloc3 p {
+    margin-top: 0px;
+}
+
+.fpv_bloc3 p:last-child {
+    margin-bottom: -50px;
+}
+
+
+/*POKEDEX*/
+
+.pokedex_container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pokedex_wrapper {
+    transition: .5s ease;
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+    background-color: #555;
+    border: 3px solid rgba(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.pokedex_wrapper_capt {
+    opacity: 0.5;
+    transition: .5s ease;
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+    background-color: #555;
+    border: 3px solid rgba(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.pokedex_wrapper_hover {
+    font-family: 'VT323';
+    text-align: center;
+    padding: 5px;
+    position: absolute;
+    top: 43px;
+    font-size: 13px;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.pokedex_wrapper:hover .pokedex_wrapper_hover {
+    opacity: 1;
+}
+
+.pokedex_wrapper:hover {
+    background-color: #666;
+    transition: .5s ease;
+}
+
 
 /*media queries */
+
+@media (max-width: 321px) {
+    .fpv_box {
+        display: inline-block;
+        padding-top: 10px;
+        margin-right: 3px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 769px) and (min-width: 322px) {
+    /*Repertoire des objets*/
+    .fpv_box {
+        display: inline-block;
+        padding-top: 10px;
+        margin-right: 3px;
+        width: 47%;
+    }
+}
 
 @media (max-width: 767px) {
     .home {
@@ -685,6 +779,21 @@ nav .actif {
         display: none;
         ;
     }
+    .fpv_box {
+        display: inline-block;
+        padding-top: 10px;
+        margin-right: 3px;
+        width: 48%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .fpv_box {
+        display: inline-block;
+        padding-top: 10px;
+        margin-right: 3px;
+        width: 31%;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -703,5 +812,14 @@ nav .actif {
         margin-top: 20px;
         height: 90vh;
         outline: solid 5px rgba(255, 255, 255, 0.5);
+    }
+    .fpv_name {
+        font-size: 1.3rem;
+    }
+    .fpv_box {
+        display: inline-block;
+        padding-top: 10px;
+        margin-right: 3px;
+        width: 23%;
     }
 }
